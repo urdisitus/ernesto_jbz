@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JobiuzUser</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_registro">RegistroActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="internet_error_info">No es posible conectarse \n con el servicio en este momento, \n revise su conección a internet.</string>
+    <string name="consumo_error_info">No es posible conectarse \n con el servicio en este momento, \n  intente mas tarde.</string>
+
+</resources>

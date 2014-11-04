@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="azul">#0066cc</color>
+    <color name="celeste">#00aeef</color>
+    <color name="amarillo">#ffcc00</color>
+    <color name="plomo">#cccccc</color>
+    <color name="plomo_claro">#ebebeb</color>
+    <color name="plomo_obscuro">#999999</color>
+    <color name="gris">#666666</color>
+    <color name="rojo">#cb0a0a</color>
+    <color name="btn_pressed">#40000000</color>
+
+</resources>
