@@ -128,7 +128,7 @@ public final class R {
 	}
 	public static final class id {
 		public static final int bottom = 0x7f05001e;
-		public static final int box_count = 0x7f05001d;
+		public static final int box_count = 0x7f05001b;
 		public static final int button = 0x7f05001c;
 		public static final int center = 0x7f050021;
 		public static final int com_facebook_body_frame = 0x7f05004d;
@@ -157,13 +157,13 @@ public final class R {
 		public static final int com_facebook_usersettingsfragment_logo_image = 0x7f050052;
 		public static final int com_facebook_usersettingsfragment_profile_name = 0x7f050053;
 		public static final int inline = 0x7f05001f;
-		public static final int large = 0x7f05001a;
-		public static final int left = 0x7f050000;
-		public static final int normal = 0x7f050006;
+		public static final int large = 0x7f050019;
+		public static final int left = 0x7f050001;
+		public static final int normal = 0x7f050007;
 		public static final int picker_subtitle = 0x7f05004a;
-		public static final int right = 0x7f050001;
-		public static final int small = 0x7f050019;
-		public static final int standard = 0x7f05001b;
+		public static final int right = 0x7f050002;
+		public static final int small = 0x7f05001a;
+		public static final int standard = 0x7f05001d;
 		public static final int top = 0x7f050020;
 	}
 	public static final class layout {

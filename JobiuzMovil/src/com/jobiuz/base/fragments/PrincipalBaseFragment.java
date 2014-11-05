@@ -33,7 +33,7 @@ public abstract class PrincipalBaseFragment<T extends UserBase> extends
 
 	public abstract HomeBaseFragment<T> instanciateHomeFragment();
 
-	public abstract LocationFragment instanciateLocationFragment();
+	public abstract LocationFragment<?,?> instanciateLocationFragment();
 
 	public abstract ProfileBaseFragment<T> instanciateProfileFragment();
 

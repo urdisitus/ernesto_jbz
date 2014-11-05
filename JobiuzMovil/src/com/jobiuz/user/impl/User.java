@@ -2,9 +2,11 @@ package com.jobiuz.user.impl;
 
 import com.jobiuz.base.interfaces.UserBase;
 
-public class User implements UserBase{
+public class User implements UserBase {
 	private String nombre;
 	private String descripcion;
+	private double latitud;
+	private double longitud;
 
 	public User(String nombre, String descripcion) {
 		super();
@@ -26,6 +28,14 @@ public class User implements UserBase{
 
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
+	}
+
+	public double getLatitud() {
+		return latitud;
+	}
+
+	public double getLongitud() {
+		return longitud;
 	}
 
 }

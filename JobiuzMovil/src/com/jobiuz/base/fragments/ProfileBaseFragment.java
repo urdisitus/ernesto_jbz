@@ -13,6 +13,7 @@ import com.jobiuz.base.TabsAdapter.TabsListener;
 import com.jobiuz.base.interfaces.UserBase;
 import com.jobiuz.base.listeners.IBaseActivity;
 import com.jobiuz.base.view.TabView;
+import com.jobiuz.user.fragments.LocationUserFragment;
 
 public class ProfileBaseFragment<T extends UserBase> extends
 		BaseFragment<IBaseActivity> implements TabsListener {
@@ -34,7 +35,7 @@ public class ProfileBaseFragment<T extends UserBase> extends
 
 	@Override
 	public Fragment getFragment(int position, String tag) {
-		return new LocationFragment();
+		return new LocationUserFragment();
 	}
 
 	@Override
@@ -47,7 +48,7 @@ public class ProfileBaseFragment<T extends UserBase> extends
 		mTabHost = (TabHost) v.findViewById(android.R.id.tabhost);
 		mTabHost.setup();
 
-		mViewPager = (ViewPager) v.findViewById(R.id.pager);
+		mViewPager = (ViewPager) v.findViewById(R.id.pager_profile);
 		mTabsAdapter = new TabsAdapter(getActivity(), mTabHost, mViewPager,
 				this);
 

@@ -4,6 +4,7 @@ import com.jobiuz.base.fragments.HomeBaseFragment;
 import com.jobiuz.base.fragments.LocationFragment;
 import com.jobiuz.base.fragments.PrincipalBaseFragment;
 import com.jobiuz.base.fragments.ProfileBaseFragment;
+import com.jobiuz.employer.impl.Employer;
 import com.jobiuz.user.impl.User;
 
 public class PrincipalUserFragment extends PrincipalBaseFragment<User> {
@@ -14,8 +15,8 @@ public class PrincipalUserFragment extends PrincipalBaseFragment<User> {
 	}
 
 	@Override
-	public LocationFragment instanciateLocationFragment() {
-		return new LocationFragment();
+	public LocationFragment<User, Employer> instanciateLocationFragment() {
+		return new LocationUserFragment();
 	}
 
 	@Override

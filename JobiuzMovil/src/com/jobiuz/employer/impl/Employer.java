@@ -1,15 +1,20 @@
-package com.jobiuz.user.impl;
+package com.jobiuz.employer.impl;
 
 import com.jobiuz.base.interfaces.UserBase;
 
-public class Employer implements UserBase{
+public class Employer implements UserBase {
 	private String nombre;
 	private String descripcion;
+	private double latitud;
+	private double longitud;
 
-	public Employer(String nombre, String descripcion) {
+	public Employer(String nombre, String descripcion, double latitud,
+			double longitud) {
 		super();
 		this.nombre = nombre;
 		this.descripcion = descripcion;
+		this.latitud = latitud;
+		this.longitud = longitud;
 	}
 
 	public String getNombre() {
@@ -27,4 +32,13 @@ public class Employer implements UserBase{
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
+
+	public double getLatitud() {
+		return latitud;
+	}
+
+	public double getLongitud() {
+		return longitud;
+	}
+
 }

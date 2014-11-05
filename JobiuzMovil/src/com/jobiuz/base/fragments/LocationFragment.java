@@ -68,17 +68,27 @@ public abstract class LocationFragment<T extends UserBase, L extends UserBase>
 
 	@Override
 	public boolean onMyLocationButtonClick() {
-		if (googleMap.getMyLocation() != null) {
-			repintarPuntos(
-					obtenerPuntosCercanos(googleMap.getMyLocation(), true),
-					googleMap.getMyLocation());
+		if (googleMap != null) {
+			if (googleMap.getMyLocation() != null) {
+				repintarPuntos(
+						obtenerPuntosCercanos(googleMap.getMyLocation(), true),
+						googleMap.getMyLocation());
+			}
 		}
-		return false;
+		return true;
+
 	}
 
 	@Override
 	public void onMyLocationChange(Location arg0) {
-
+//		if (googleMap != null) {
+//			if (googleMap.getMyLocation() != null) {
+//				repintarPuntos(
+//						obtenerPuntosCercanos(googleMap.getMyLocation(), true),
+//						googleMap.getMyLocation());
+//			}
+//		}
+//		return true;
 	}
 
 	public void repintarPuntos(List<L> puntosCercanos, Location location) {
@@ -104,8 +114,10 @@ public abstract class LocationFragment<T extends UserBase, L extends UserBase>
 	@Override
 	public void onMapReady(GoogleMap googleMap) {
 		if (googleMap != null) {
+			this.googleMap = googleMap;
 			googleMap.setMyLocationEnabled(true);
 			googleMap.getUiSettings().setMyLocationButtonEnabled(true);
+			googleMap.setMyLocationEnabled(true);
 			googleMap.getUiSettings().setAllGesturesEnabled(true);
 			googleMap.clear();
 			googleMap.setOnMyLocationButtonClickListener(this);

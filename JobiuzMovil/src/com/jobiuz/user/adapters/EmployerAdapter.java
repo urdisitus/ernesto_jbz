@@ -4,7 +4,7 @@ import java.util.List;
 
 import android.content.Context;
 
-import com.jobiuz.user.impl.Employer;
+import com.jobiuz.employer.impl.Employer;
 
 public class EmployerAdapter extends UserBaseAdapter<Employer> {
 
