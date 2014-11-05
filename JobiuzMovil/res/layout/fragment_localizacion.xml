@@ -43,9 +43,15 @@
     </LinearLayout>
 
     <FrameLayout
-        android:id="@+id/contenido_location"
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/contenido_location"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+
     </FrameLayout>
 
 </LinearLayout>

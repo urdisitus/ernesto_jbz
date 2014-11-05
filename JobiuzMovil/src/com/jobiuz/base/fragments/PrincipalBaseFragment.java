@@ -13,7 +13,6 @@ import com.jobiuz.base.TabsAdapter.TabsListener;
 import com.jobiuz.base.interfaces.UserBase;
 import com.jobiuz.base.listeners.IBaseActivity;
 import com.jobiuz.base.view.TabView;
-import com.jobiuz.user.fragments.LocationFragment;
 
 public abstract class PrincipalBaseFragment<T extends UserBase> extends
 		BaseFragment<IBaseActivity> implements TabsListener {

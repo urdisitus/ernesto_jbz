@@ -1,6 +1,7 @@
 package com.jobiuz.user.fragments;
 
 import com.jobiuz.base.fragments.HomeBaseFragment;
+import com.jobiuz.base.fragments.LocationFragment;
 import com.jobiuz.base.fragments.PrincipalBaseFragment;
 import com.jobiuz.base.fragments.ProfileBaseFragment;
 import com.jobiuz.user.impl.User;
