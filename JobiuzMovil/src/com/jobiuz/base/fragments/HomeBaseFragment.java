@@ -11,9 +11,9 @@ import android.widget.ListView;
 
 import com.jobiuz.R;
 import com.jobiuz.base.BaseFragment;
+import com.jobiuz.base.adapters.UserBaseAdapter;
 import com.jobiuz.base.interfaces.UserBase;
 import com.jobiuz.base.listeners.IBaseActivity;
-import com.jobiuz.user.adapters.UserBaseAdapter;
 
 public abstract class HomeBaseFragment<T extends UserBase> extends
 		BaseFragment<IBaseActivity> implements OnItemClickListener {

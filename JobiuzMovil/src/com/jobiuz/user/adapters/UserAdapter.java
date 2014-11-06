@@ -4,6 +4,7 @@ import java.util.List;
 
 import android.content.Context;
 
+import com.jobiuz.base.adapters.UserBaseAdapter;
 import com.jobiuz.user.impl.User;
 
 public class UserAdapter extends UserBaseAdapter<User> {

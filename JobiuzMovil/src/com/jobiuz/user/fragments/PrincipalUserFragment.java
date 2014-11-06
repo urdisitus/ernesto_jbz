@@ -7,10 +7,11 @@ import com.jobiuz.base.fragments.ProfileBaseFragment;
 import com.jobiuz.employer.impl.Employer;
 import com.jobiuz.user.impl.User;
 
-public class PrincipalUserFragment extends PrincipalBaseFragment<User> {
+public class PrincipalUserFragment extends
+		PrincipalBaseFragment<User, Employer> {
 
 	@Override
-	public HomeBaseFragment<User> instanciateHomeFragment() {
+	public HomeBaseFragment<Employer> instanciateHomeFragment() {
 		return new HomeUserFragment();
 	}
 

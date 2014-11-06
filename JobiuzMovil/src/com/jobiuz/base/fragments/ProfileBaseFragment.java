@@ -13,6 +13,7 @@ import com.jobiuz.base.TabsAdapter.TabsListener;
 import com.jobiuz.base.interfaces.UserBase;
 import com.jobiuz.base.listeners.IBaseActivity;
 import com.jobiuz.base.view.TabView;
+import com.jobiuz.user.fragments.FavoritosUserFragment;
 import com.jobiuz.user.fragments.LocationUserFragment;
 
 public class ProfileBaseFragment<T extends UserBase> extends
@@ -36,6 +37,8 @@ public class ProfileBaseFragment<T extends UserBase> extends
 	@Override
 	public Fragment getFragment(int position, String tag) {
 		switch (position) {
+		case 0:
+			return new FavoritosUserFragment();
 		case 2:
 			return new ProfileEditFragment();
 
@@ -67,7 +70,7 @@ public class ProfileBaseFragment<T extends UserBase> extends
 						R.drawable.ic_newspaperon)));
 
 		mTabsAdapter.addTab(mTabHost.newTabSpec("tree").setIndicator(
-				getTabView(R.drawable.locationoff, R.drawable.locationon)));
+				getTabView(R.drawable.penciloff, R.drawable.pencilon)));
 
 		if (savedInstanceState != null) {
 			mTabHost.setCurrentTabByTag(savedInstanceState.getString("tab"));

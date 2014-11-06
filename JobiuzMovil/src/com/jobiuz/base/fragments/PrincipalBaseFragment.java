@@ -14,8 +14,8 @@ import com.jobiuz.base.interfaces.UserBase;
 import com.jobiuz.base.listeners.IBaseActivity;
 import com.jobiuz.base.view.TabView;
 
-public abstract class PrincipalBaseFragment<T extends UserBase> extends
-		BaseFragment<IBaseActivity> implements TabsListener {
+public abstract class PrincipalBaseFragment<T extends UserBase, L extends UserBase>
+		extends BaseFragment<IBaseActivity> implements TabsListener {
 	private TabHost mTabHost;
 	private ViewPager mViewPager;
 	private TabsAdapter mTabsAdapter;
@@ -31,9 +31,9 @@ public abstract class PrincipalBaseFragment<T extends UserBase> extends
 		outState.putString("tab", mTabHost.getCurrentTabTag());
 	}
 
-	public abstract HomeBaseFragment<T> instanciateHomeFragment();
+	public abstract HomeBaseFragment<L> instanciateHomeFragment();
 
-	public abstract LocationFragment<?,?> instanciateLocationFragment();
+	public abstract LocationFragment<T, L> instanciateLocationFragment();
 
 	public abstract ProfileBaseFragment<T> instanciateProfileFragment();
 

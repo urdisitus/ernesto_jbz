@@ -56,7 +56,18 @@
         </activity>
         <activity
             android:name="com.jobiuz.user.MainActivity"
-            android:label="@string/title_activity_main" >
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jobiuz.employer.LoginEmployerActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jobiuz.employer.RegistroEmployerActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 

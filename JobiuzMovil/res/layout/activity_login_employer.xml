@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/azul"
     android:orientation="vertical"
-    tools:context=".LoginUserActivity" >
+    tools:context=".LoginEmployerActivity" >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -115,7 +115,7 @@
             android:textSize="25sp" />
 
         <TextView
-            android:id="@+id/tlt_or_sign_with"
+            android:id="@+id/tlt_or_log_with"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
@@ -213,16 +213,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
-                    android:text="Already a member?"
+                    android:text="Not a member?"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="@android:color/white" />
 
                 <TextView
-                    android:id="@+id/tlt_login_here"
+                    android:id="@+id/tlt_sing_on_here"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/selector_btn_rect_transparente"
-                    android:text="Log In here..."
+                    android:text="Sing on here..."
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="@color/amarillo" />
             </LinearLayout>

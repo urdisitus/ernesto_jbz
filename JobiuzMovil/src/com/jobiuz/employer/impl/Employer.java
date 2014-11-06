@@ -8,6 +8,12 @@ public class Employer implements UserBase {
 	private double latitud;
 	private double longitud;
 
+	public Employer(String nombre, String descripcion) {
+		super();
+		this.nombre = nombre;
+		this.descripcion = descripcion;
+	}
+
 	public Employer(String nombre, String descripcion, double latitud,
 			double longitud) {
 		super();

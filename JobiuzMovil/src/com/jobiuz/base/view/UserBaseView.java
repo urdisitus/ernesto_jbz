@@ -1,6 +1,7 @@
 package com.jobiuz.base.view;
 
 import com.jobiuz.R;
+import com.jobiuz.base.LetraUtils;
 import com.jobiuz.base.interfaces.UserBase;
 
 import android.content.Context;
@@ -38,6 +39,8 @@ public class UserBaseView extends LinearLayout implements OnClickListener {
 		// btnRigth.setOnClickListener(this);
 		lblDescripcion = (TextView) findViewById(R.id.lbl_desc_item);
 		lblNombre = (TextView) findViewById(R.id.lbl_nombre_item);
+		LetraUtils.setRegularHelveticaNeue(lblDescripcion);
+		LetraUtils.setBoldHelveticaNeue(lblNombre);
 		// if (getContext() instanceof itemBancaMovilListener) {
 		// listener = (itemBancaMovilListener) getContext();
 		// }
