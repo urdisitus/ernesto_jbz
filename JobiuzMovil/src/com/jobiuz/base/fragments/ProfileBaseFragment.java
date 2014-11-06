@@ -35,6 +35,13 @@ public class ProfileBaseFragment<T extends UserBase> extends
 
 	@Override
 	public Fragment getFragment(int position, String tag) {
+		switch (position) {
+		case 2:
+			return new ProfileEditFragment();
+
+		default:
+			break;
+		}
 		return new LocationUserFragment();
 	}
 

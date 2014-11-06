@@ -13,7 +13,7 @@
         android:orientation="horizontal" >
 
         <ImageView
-            android:id="@+id/imageView1"
+            android:id="@+id/img_foto_perfil_edit"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3.2"
@@ -29,14 +29,14 @@
             android:paddingLeft="5dp" >
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/lbl_nombre_perfil_edit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Medium Text"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/lbl_nickname_email_perfil_edit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Small Text"
@@ -72,25 +72,43 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="1dp"
                 android:orientation="vertical" >
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/btn_sex_perfil_edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/white"
+                android:background="@drawable/selector_btn_rect_white"
                 android:padding="10dp"
                 android:paddingBottom="5dp"
                 android:paddingLeft="10dp"
                 android:paddingTop="5dp" >
 
                 <TextView
-                    android:id="@+id/textView1"
+                    android:id="@+id/tlt_sex_perfil_edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Medium Text"
+                    android:text="Sex"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/lbl_sex_perfil_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="Male"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/plomo" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/arrow_rigth" />
             </LinearLayout>
 
             <LinearLayout
@@ -101,70 +119,38 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/btn_age_perfil_edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/white"
+                android:background="@drawable/selector_btn_rect_white"
                 android:padding="10dp"
                 android:paddingBottom="5dp"
                 android:paddingLeft="10dp"
                 android:paddingTop="5dp" >
 
                 <TextView
-                    android:id="@+id/textView1"
+                    android:id="@+id/tlt_age_perfil_edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Medium Text"
+                    android:text="Age"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginBottom="10dp"
-                android:background="@color/plomo"
-                android:orientation="vertical" >
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@android:color/white"
-                android:padding="10dp"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingTop="5dp" >
 
                 <TextView
-                    android:id="@+id/textView1"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/lbl_age_perfil_edit"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="Medium Text"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
-            </LinearLayout>
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="37"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/plomo" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginBottom="10dp"
-                android:background="@color/plomo"
-                android:orientation="vertical" >
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@android:color/white"
-                android:padding="10dp"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingTop="5dp" >
-
-                <TextView
-                    android:id="@+id/textView1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Medium Text"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/calendar" />
             </LinearLayout>
 
             <LinearLayout
@@ -178,18 +164,102 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/white"
+                android:background="@drawable/selector_btn_rect_white"
+                android:padding="10dp"
+                android:paddingBottom="5dp"
+                android:id="@+id/btn_phone_perfil_edit"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/tlt_phone__perfil_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/lbl_phone__perfil_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="(591) 700-0000"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/plomo" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/arrow_rigth" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/plomo"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_attachment_perfil_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_btn_rect_white"
                 android:padding="10dp"
                 android:paddingBottom="5dp"
                 android:paddingLeft="10dp"
                 android:paddingTop="5dp" >
 
                 <TextView
-                    android:id="@+id/textView1"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/tlt_attachments_perfil_edit"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="Medium Text"
+                    android:layout_weight="1"
+                    android:text="Attachments"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/arrow_rigth" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/plomo"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_btn_rect_white"
+                android:padding="10dp"
+                android:id="@+id/btn_filters_perfil_edit"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/tlt_filters_perfil_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Filters"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/arrow_rigth" />
             </LinearLayout>
 
             <LinearLayout
@@ -202,22 +272,30 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/white"
+                android:background="@drawable/selector_btn_rect_white"
                 android:padding="10dp"
                 android:paddingBottom="5dp"
+                android:id="@+id/btn_categorias_perfil_edit"
                 android:paddingLeft="10dp"
                 android:paddingTop="5dp" >
 
                 <TextView
-                    android:id="@+id/textView1"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/tlt_categories_perfil_edit"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="Medium Text"
+                    android:layout_weight="1"
+                    android:text="Categories"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/arrow_rigth" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="25dp"
                 android:layout_height="1dp"
                 android:layout_marginBottom="10dp"
                 android:background="@color/plomo"
