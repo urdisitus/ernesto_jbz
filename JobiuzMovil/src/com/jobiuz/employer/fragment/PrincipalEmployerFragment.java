@@ -18,7 +18,7 @@ public class PrincipalEmployerFragment extends
 	@Override
 	public LocationFragment<Employer, User> instanciateLocationFragment() {
 		return new LocationEmployerFragment();
-	}
+	}	
 
 	@Override
 	public ProfileBaseFragment<Employer> instanciateProfileFragment() {
