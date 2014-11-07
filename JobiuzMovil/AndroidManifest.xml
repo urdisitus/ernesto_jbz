@@ -35,9 +35,13 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.maps.v2.API_KEY" -->
+        <!-- android:value="AIzaSyDEjIYSxLu6wHCAJI_OJOYp67fXCwk1DUE" /> -->
+
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyDEjIYSxLu6wHCAJI_OJOYp67fXCwk1DUE" />
+            android:value="AIzaSyBc04upOEJHfUFRG2N3ri5hCVrDO_89LvE" />
 
         <activity
             android:name="com.jobiuz.user.LoginUserActivity"

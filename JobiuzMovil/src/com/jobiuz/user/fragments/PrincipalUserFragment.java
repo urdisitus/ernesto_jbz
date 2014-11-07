@@ -2,6 +2,7 @@ package com.jobiuz.user.fragments;
 
 import com.jobiuz.base.fragments.HomeBaseFragment;
 import com.jobiuz.base.fragments.LocationFragment;
+import com.jobiuz.base.fragments.MessagesBaseFragment;
 import com.jobiuz.base.fragments.PrincipalBaseFragment;
 import com.jobiuz.base.fragments.ProfileBaseFragment;
 import com.jobiuz.employer.impl.Employer;
@@ -23,6 +24,11 @@ public class PrincipalUserFragment extends
 	@Override
 	public ProfileBaseFragment<User> instanciateProfileFragment() {
 		return new ProfileUserFragment();
+	}
+
+	@Override
+	public MessagesBaseFragment<Employer> instanciateMessageFragment() {
+		return new MessageUserFragment();
 	}
 
 }

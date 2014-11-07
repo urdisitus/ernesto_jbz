@@ -37,14 +37,20 @@ public abstract class PrincipalBaseFragment<T extends UserBase, L extends UserBa
 
 	public abstract ProfileBaseFragment<T> instanciateProfileFragment();
 
+	public abstract MessagesBaseFragment<L> instanciateMessageFragment();
+
 	@Override
 	public Fragment getFragment(int position, String tag) {
 		switch (position) {
 		case 0:
 			return instanciateHomeFragment();
+		case 1:
+			return new SearchFragment();
 		case 2:
 			return instanciateLocationFragment();
 		case 3:
+			return instanciateMessageFragment();
+		case 4:
 			return instanciateProfileFragment();
 		default:
 			break;

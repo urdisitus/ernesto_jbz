@@ -13,10 +13,11 @@ import com.jobiuz.base.TabsAdapter.TabsListener;
 import com.jobiuz.base.interfaces.UserBase;
 import com.jobiuz.base.listeners.IBaseActivity;
 import com.jobiuz.base.view.TabView;
+import com.jobiuz.user.fragments.FavoritosInboxUserFragment;
 import com.jobiuz.user.fragments.FavoritosUserFragment;
-import com.jobiuz.user.fragments.LocationUserFragment;
+import com.jobiuz.user.fragments.InboxUserFragment;
 
-public class ProfileBaseFragment<T extends UserBase> extends
+public class MessagesBaseFragment<T extends UserBase> extends
 		BaseFragment<IBaseActivity> implements TabsListener {
 
 	private TabHost mTabHost;
@@ -38,14 +39,14 @@ public class ProfileBaseFragment<T extends UserBase> extends
 	public Fragment getFragment(int position, String tag) {
 		switch (position) {
 		case 0:
-			return new FavoritosUserFragment();
-		case 2:
-			return new ProfileEditFragment();
+			return new InboxUserFragment();
+		case 1:
+			return new FavoritosInboxUserFragment();
 
 		default:
 			break;
 		}
-		return new LocationUserFragment();
+		return new FavoritosInboxUserFragment();
 	}
 
 	@Override
@@ -58,16 +59,15 @@ public class ProfileBaseFragment<T extends UserBase> extends
 		mTabHost = (TabHost) v.findViewById(android.R.id.tabhost);
 		mTabHost.setup();
 
-		mViewPager = (ViewPager) v.findViewById(R.id.pager_profile);
+		mViewPager = (ViewPager) v.findViewById(R.id.pager_messages);
 		mTabsAdapter = new TabsAdapter(getActivity(), mTabHost, mViewPager,
 				this);
 
 		mTabsAdapter.addTab(mTabHost.newTabSpec("one").setIndicator(
-				getTabView(R.drawable.paperclipon, R.drawable.paperclipoff)));
+				getTabView(R.drawable.inboxoff, R.drawable.inboxon)));
 
 		mTabsAdapter.addTab(mTabHost.newTabSpec("two").setIndicator(
-				getTabView(R.drawable.vcardoff,
-						R.drawable.vcardon)));
+				getTabView(R.drawable.paperclipon, R.drawable.paperclipoff)));
 
 		mTabsAdapter.addTab(mTabHost.newTabSpec("tree").setIndicator(
 				getTabView(R.drawable.penciloff, R.drawable.pencilon)));
@@ -79,7 +79,7 @@ public class ProfileBaseFragment<T extends UserBase> extends
 
 	@Override
 	protected int viewResource() {
-		return R.layout.fragment_profile;
+		return R.layout.fragment_inbox;
 	}
 
 }

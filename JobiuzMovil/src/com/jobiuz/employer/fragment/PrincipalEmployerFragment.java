@@ -2,8 +2,10 @@ package com.jobiuz.employer.fragment;
 
 import com.jobiuz.base.fragments.HomeBaseFragment;
 import com.jobiuz.base.fragments.LocationFragment;
+import com.jobiuz.base.fragments.MessagesBaseFragment;
 import com.jobiuz.base.fragments.PrincipalBaseFragment;
 import com.jobiuz.base.fragments.ProfileBaseFragment;
+import com.jobiuz.base.interfaces.UserBase;
 import com.jobiuz.employer.impl.Employer;
 import com.jobiuz.user.impl.User;
 
@@ -23,6 +25,11 @@ public class PrincipalEmployerFragment extends
 	@Override
 	public ProfileBaseFragment<Employer> instanciateProfileFragment() {
 		return new ProfileUserFragment();
+	}
+
+	@Override
+	public MessagesBaseFragment<User> instanciateMessageFragment() {
+		return null;
 	}
 
 }

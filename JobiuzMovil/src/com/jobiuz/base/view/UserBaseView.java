@@ -12,7 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.view.View.OnClickListener;
 
-public class UserBaseView extends LinearLayout implements OnClickListener {
+public class UserBaseView extends LinearLayout {
 
 	// public UserBaseView(Context context, AttributeSet attrs, int defStyle) {
 	// super(context, attrs, defStyle);
@@ -32,7 +32,7 @@ public class UserBaseView extends LinearLayout implements OnClickListener {
 	{
 		LayoutInflater inflater = (LayoutInflater) getContext()
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-		inflater.inflate(R.layout.item_principal_list, this);
+		inflater.inflate(R.layout.item_home_list, this);
 		// btnLeft = (ImageView) findViewById(R.id.img_banca_movil_atencion);
 		// btnRigth = (ImageView)
 		// findViewById(R.id.btn_ir_banca_movil_activity);
@@ -50,18 +50,6 @@ public class UserBaseView extends LinearLayout implements OnClickListener {
 		this.userBase = userBase;
 		lblDescripcion.setText(userBase.getDescripcion());
 		lblNombre.setText(userBase.getNombre());
-	}
-
-	@Override
-	public void onClick(View v) {
-		// switch (v.getId()) {
-		// case R.id.btn:
-		//
-		// break;
-		//
-		// default:
-		// break;
-		// }
 	}
 
 }

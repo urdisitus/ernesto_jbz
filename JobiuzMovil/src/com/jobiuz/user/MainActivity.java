@@ -1,12 +1,14 @@
 package com.jobiuz.user;
 
 import android.os.Bundle;
+import android.widget.CompoundButton;
 
 import com.jobiuz.R;
 import com.jobiuz.base.BaseActivity;
+import com.jobiuz.base.adapters.IToggleItemListListener;
 import com.jobiuz.user.fragments.PrincipalUserFragment;
 
-public class MainActivity extends BaseActivity {
+public class MainActivity extends BaseActivity implements IToggleItemListListener{
 
 	@Override
 	protected int getResLayout() {
@@ -30,5 +32,11 @@ public class MainActivity extends BaseActivity {
 	@Override
 	protected String getScreenLabel() {
 		return "Principal";
+	}
+
+	@Override
+	public void onTogglePressed(CompoundButton buttonView, boolean isChecked,
+			Object tag) {
+		
 	}
 }

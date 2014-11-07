@@ -2,6 +2,7 @@ package com.jobiuz.employer.fragment;
 
 import com.jobiuz.base.adapters.UserBaseAdapter;
 import com.jobiuz.base.fragments.HomeBaseFragment;
+import com.jobiuz.user.adapters.UserAdapter;
 import com.jobiuz.user.impl.User;
 
 public class HomeEmployerFragment extends HomeBaseFragment<User> {
@@ -13,7 +14,7 @@ public class HomeEmployerFragment extends HomeBaseFragment<User> {
 					"Ernesto Perez Moron " + i,
 					"Se necesita empleado para realizar labores de trabajo.\nBs. 800.- /Lun a Vie 8:00 - 18:00"));
 		}
-		return new UserBaseAdapter<User>(getActivity(), list);
+		return new UserAdapter(getActivity(), list);
 	}
 
 }
